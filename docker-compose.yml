@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  aigovernorportal.api:
+    image: ${DOCKER_REGISTRY-}aigovernorportalapi
+    build:
+      context: .
+      dockerfile: src/AiGovernor.Api/Dockerfile
+    depends_on:
+      - aigovernorportal-db
+
+  aigovernorportal-db:
+    image: postgres:latest
+    container_name: AiGovernorPortal.Db
+    environment:
+      - POSTGRES_DB=aigovernorportal
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

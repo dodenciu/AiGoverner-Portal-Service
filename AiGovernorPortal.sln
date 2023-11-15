@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4505794B-D866-4096-A528-1E89B0D599B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6693C005-57B3-4197-9EB7-F900C25DB7BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiGovernorPortal.Domain", "src\AiGovernorPortal.Domain\AiGovernorPortal.Domain.csproj", "{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Application", "src\AiGovernorPortal.Application\AiGovernorPortal.Application.csproj", "{2C3E0129-4D65-4DBC-81F9-45E49289358C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Infrastructure", "src\AiGovernorPortal.Infrastructure\AiGovernorPortal.Infrastructure.csproj", "{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Api", "src\AiGovernor.Api\AiGovernorPortal.Api.csproj", "{997C7A8F-E7CC-47F4-BBCB-135494B154BD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BA24031F-420F-46A9-A840-52B2170770FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3E0129-4D65-4DBC-81F9-45E49289358C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3E0129-4D65-4DBC-81F9-45E49289358C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3E0129-4D65-4DBC-81F9-45E49289358C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3E0129-4D65-4DBC-81F9-45E49289358C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997C7A8F-E7CC-47F4-BBCB-135494B154BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997C7A8F-E7CC-47F4-BBCB-135494B154BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997C7A8F-E7CC-47F4-BBCB-135494B154BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997C7A8F-E7CC-47F4-BBCB-135494B154BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA24031F-420F-46A9-A840-52B2170770FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA24031F-420F-46A9-A840-52B2170770FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA24031F-420F-46A9-A840-52B2170770FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA24031F-420F-46A9-A840-52B2170770FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5CCE34D-70EA-4529-9740-6E9CBA1033FB} = {4505794B-D866-4096-A528-1E89B0D599B8}
+		{2C3E0129-4D65-4DBC-81F9-45E49289358C} = {4505794B-D866-4096-A528-1E89B0D599B8}
+		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56} = {4505794B-D866-4096-A528-1E89B0D599B8}
+		{997C7A8F-E7CC-47F4-BBCB-135494B154BD} = {4505794B-D866-4096-A528-1E89B0D599B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2951EA8-442A-4750-BD24-832D67BDD87B}
+	EndGlobalSection
+EndGlobal
