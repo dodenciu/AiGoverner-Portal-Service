@@ -27,13 +27,13 @@ public class ListTenantsQueryHandler
                             subdomain as Subdomain,
                             status as State,
                             created_on_utc as CreatedOnUtc,
-                            address as Address,
-                            email as Email,
-                            company as Company
-                        FROM Tenant
+                            contact_address as Address,
+                            contact_email as Email,
+                            contact_company as Company
+                        FROM tenants
                         ORDER BY CreatedOnUtc
-                        OFFSET @Offset @Page
-                        FETCH NEXT @PageSize @Page ONLY;
+                        OFFSET ((@Page - 1) * @PageSize)
+                        LIMIT @PageSize;
                         """;
 
         var tenants = await connection
@@ -48,7 +48,8 @@ public class ListTenantsQueryHandler
                 {
                     request.Page,
                     request.PageSize
-                });
+                },
+                splitOn: "Address");
 
         return tenants.ToList();
     }

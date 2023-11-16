@@ -1,4 +1,5 @@
 using AiGovernor.Api.Extensions;
+using AiGovernorPortal.Api.Extensions;
 using AiGovernorPortal.Application;
 using AiGovernorPortal.Infrastructure;
 
@@ -18,8 +19,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.ApplyMigrations();
-    //app.SeedData();
+    await app.ApplyMigrations();
+    await app.SeedData();
 }
 
 app.UseHttpsRedirection();

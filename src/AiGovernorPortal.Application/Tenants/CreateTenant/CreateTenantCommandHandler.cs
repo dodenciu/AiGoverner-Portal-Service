@@ -16,7 +16,7 @@ internal sealed class CreateTenantCommandHandler(
         var tenantName = new Name(request.Name);
         var tenantSubdomain = new Subdomain(request.Subdomain);
 
-        var tenant = new Tenant(tenantId, tenantName, tenantSubdomain, tenantContact, DateTime.Now);
+        var tenant = new Tenant(tenantId, tenantName, tenantSubdomain, tenantContact, DateTime.UtcNow);
         tenantRepository.Add(tenant);
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return tenant.Id.Value;

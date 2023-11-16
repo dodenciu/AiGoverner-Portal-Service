@@ -7,6 +7,17 @@ using AiGovernorPortal.Domain.Vaults;
 namespace AiGovernorPortal.Domain.Tenants;
 public sealed class Tenant : Entity<TenantId>
 {
+    public License License { get; private set; }
+    public ICollection<AiProxy> AiProxies { get; private set; }
+    public ICollection<Vault> Vaults { get; private set; }
+    public Name Name { get; private set; }
+    public Subdomain Subdomain { get; private set; }
+    public Contact Contact { get; private set; }
+    public TenantStatus Status { get; private set; }
+    public DateTime CreatedOnUtc { get; private set; }
+    public DateTime? ActivatedOnUtc { get; private set; }
+    public DateTime? TerminatedOnUtc { get; private set; }
+
     public Tenant(
         TenantId tenantId,
         Name name,
@@ -18,24 +29,11 @@ public sealed class Tenant : Entity<TenantId>
         Subdomain = subdomain;
         Contact = contact;
         CreatedOnUtc = createdOnUtc;
-        AiProxies = new();
-        Vaults = new();
     }
 
     private Tenant()
     {
     }
-
-    public LicenseId LicenseId { get; private set; }
-    public Name Name { get; private set; }
-    public Subdomain Subdomain { get; private set; }
-    public Contact Contact { get; private set; }
-    public List<AiProxy> AiProxies { get; private set; }
-    public List<Vault> Vaults { get; private set; }
-    public TenantStatus Status { get; private set; }
-    public DateTime CreatedOnUtc { get; private set; }
-    public DateTime? ActivatedOnUtc { get; private set; }
-    public DateTime? TerminatedOnUtc { get; private set; }
 
     public Result AssignLicense(License license, CapabilitiesService capabilitiesService)
     {
@@ -44,7 +42,7 @@ public sealed class Tenant : Entity<TenantId>
             return Result.Failure(TenantErrors.InvalidLicense);
         }
         var capabilities = capabilitiesService.GetCapabilities(license);
-        LicenseId = license.Id;
+        License = license;
         AiProxies = capabilities.AvailableAiProxies;
         Vaults = capabilities.AvailableAiVaults;
 

@@ -5,9 +5,13 @@ namespace AiGovernorPortal.Domain.Licenses;
 
 public class LicenseTemplate : Entity<LicenseTemplateId>
 {
-    private LicenseTemplate(
+    public ICollection<Feature> Features { get; private set; }
+    public TimeSpan DurationMonths { get; private set; }
+    public byte DurationInMonths { get; init; }
+
+    public LicenseTemplate(
         LicenseTemplateId id,
-        List<Feature> features,
+        ICollection<Feature> features,
         byte durationInMonths) : base(id)
     {
         Features = features;
@@ -17,8 +21,4 @@ public class LicenseTemplate : Entity<LicenseTemplateId>
     private LicenseTemplate()
     {
     }
-
-    public TimeSpan DurationMonths { get; private set; }
-    public List<Feature> Features { get; private set; }
-    public byte DurationInMonths { get; init; }
 }
