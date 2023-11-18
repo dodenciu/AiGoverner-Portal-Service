@@ -46,7 +46,7 @@ public sealed class Tenant : Entity<TenantId>
         AiProxies = capabilities.AvailableAiProxies;
         Vaults = capabilities.AvailableAiVaults;
 
-        RaiseDomainEvent(new LicenseAssignedDomainEvent(license.Id));
+        RaiseDomainEvent(new LicenseAssignedDomainEvent(Id, license.Id));
 
         return Result.Success();
     }

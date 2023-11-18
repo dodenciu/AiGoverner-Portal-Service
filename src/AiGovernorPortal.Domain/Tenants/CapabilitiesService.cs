@@ -10,28 +10,23 @@ public class CapabilitiesService
 {
     public Capabilities GetCapabilities(License license)
     {
-        var availableAiProxies = new List<AiProxy>();
-        var availableAiVaults = new List<Vault>();
-
         var proxyTypes = new HashSet<AiType>(license
             .LicenseTemplate
             .Features
             .SelectMany(feature => feature.AiProxies));
 
-        foreach (var proxyType in proxyTypes)
-        {
-            availableAiProxies.Add(AiProxy.CreateDynamic(proxyType));
-        }
+        var availableAiProxies = proxyTypes
+            .Select(AiProxy.CreateDynamic)
+            .ToList();
 
         var vaultTypes = new HashSet<VaultType>(license
             .LicenseTemplate
             .Features
             .SelectMany(feature => feature.Storage));
 
-        foreach (var vaultType in vaultTypes)
-        {
-            availableAiVaults.Add(Vault.Create(20_000, vaultType));
-        }
+        var availableAiVaults = vaultTypes
+            .Select(vaultType => Vault.Create(20_000, vaultType))
+            .ToList();
 
         return new Capabilities(availableAiProxies, availableAiVaults);
     }

@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6693C005-5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiGovernorPortal.Domain", "src\AiGovernorPortal.Domain\AiGovernorPortal.Domain.csproj", "{D5CCE34D-70EA-4529-9740-6E9CBA1033FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Application", "src\AiGovernorPortal.Application\AiGovernorPortal.Application.csproj", "{2C3E0129-4D65-4DBC-81F9-45E49289358C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiGovernorPortal.Application", "src\AiGovernorPortal.Application\AiGovernorPortal.Application.csproj", "{2C3E0129-4D65-4DBC-81F9-45E49289358C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Infrastructure", "src\AiGovernorPortal.Infrastructure\AiGovernorPortal.Infrastructure.csproj", "{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiGovernorPortal.Infrastructure", "src\AiGovernorPortal.Infrastructure\AiGovernorPortal.Infrastructure.csproj", "{BAB2B11F-773C-49E4-9C4A-98A04B96DA56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Api", "src\AiGovernor.Api\AiGovernorPortal.Api.csproj", "{997C7A8F-E7CC-47F4-BBCB-135494B154BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiGovernorPortal.Api", "src\AiGovernor.Api\AiGovernorPortal.Api.csproj", "{997C7A8F-E7CC-47F4-BBCB-135494B154BD}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BA24031F-420F-46A9-A840-52B2170770FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Domain.UnitTests", "test\AiGovernorPortal.Domain.UnitTests\AiGovernorPortal.Domain.UnitTests.csproj", "{1E69CD26-174B-4378-BD7D-26961A8A5FAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{BA24031F-420F-46A9-A840-52B2170770FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA24031F-420F-46A9-A840-52B2170770FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA24031F-420F-46A9-A840-52B2170770FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E69CD26-174B-4378-BD7D-26961A8A5FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E69CD26-174B-4378-BD7D-26961A8A5FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E69CD26-174B-4378-BD7D-26961A8A5FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E69CD26-174B-4378-BD7D-26961A8A5FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{2C3E0129-4D65-4DBC-81F9-45E49289358C} = {4505794B-D866-4096-A528-1E89B0D599B8}
 		{BAB2B11F-773C-49E4-9C4A-98A04B96DA56} = {4505794B-D866-4096-A528-1E89B0D599B8}
 		{997C7A8F-E7CC-47F4-BBCB-135494B154BD} = {4505794B-D866-4096-A528-1E89B0D599B8}
+		{1E69CD26-174B-4378-BD7D-26961A8A5FAA} = {6693C005-57B3-4197-9EB7-F900C25DB7BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2951EA8-442A-4750-BD24-832D67BDD87B}

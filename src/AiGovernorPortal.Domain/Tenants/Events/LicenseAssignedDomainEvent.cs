@@ -3,4 +3,4 @@ using AiGovernorPortal.Domain.Licenses;
 
 namespace AiGovernorPortal.Domain.Tenants.Events;
 
-public sealed record LicenseAssignedDomainEvent(LicenseId licenseId) : IDomainEvent;
+public sealed record LicenseAssignedDomainEvent(TenantId TenantId, LicenseId LicenseId) : IDomainEvent;

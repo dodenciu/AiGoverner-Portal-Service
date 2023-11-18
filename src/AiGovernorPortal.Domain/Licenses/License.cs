@@ -41,4 +41,9 @@ public class License : Entity<LicenseId>
 
         return license;
     }
+
+    public void Validate()
+    {
+        Status = LicenseStatus.Validated;
+    }
 }
