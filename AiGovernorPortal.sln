@@ -19,7 +19,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Domain.UnitTests", "test\AiGovernorPortal.Domain.UnitTests\AiGovernorPortal.Domain.UnitTests.csproj", "{1E69CD26-174B-4378-BD7D-26961A8A5FAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGorvernorPortal.Application.UniTests", "test\AiGorvernorPortal.Application.UniTests\AiGorvernorPortal.Application.UniTests.csproj", "{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.Application.UniTests", "test\AiGorvernorPortal.Application.UniTests\AiGovernorPortal.Application.UniTests.csproj", "{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGovernorPortal.ArchitectureTests", "test\AiGovernorPortal.ArchitectureTests\AiGovernorPortal.ArchitectureTests.csproj", "{2CC1A3C0-D96F-4740-B046-06A94B79603D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC1A3C0-D96F-4740-B046-06A94B79603D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC1A3C0-D96F-4740-B046-06A94B79603D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC1A3C0-D96F-4740-B046-06A94B79603D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC1A3C0-D96F-4740-B046-06A94B79603D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{997C7A8F-E7CC-47F4-BBCB-135494B154BD} = {4505794B-D866-4096-A528-1E89B0D599B8}
 		{1E69CD26-174B-4378-BD7D-26961A8A5FAA} = {6693C005-57B3-4197-9EB7-F900C25DB7BB}
 		{D8F1FC32-CDC8-41DD-8D2C-A045DF92646C} = {6693C005-57B3-4197-9EB7-F900C25DB7BB}
+		{2CC1A3C0-D96F-4740-B046-06A94B79603D} = {6693C005-57B3-4197-9EB7-F900C25DB7BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2951EA8-442A-4750-BD24-832D67BDD87B}

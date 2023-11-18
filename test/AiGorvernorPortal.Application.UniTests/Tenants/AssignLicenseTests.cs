@@ -6,7 +6,7 @@ using Bogus;
 using FluentAssertions;
 using NSubstitute;
 
-namespace AiGorvernorPortal.Application.UniTests.Tenants;
+namespace AiGovernorPortal.Application.UniTests.Tenants;
 
 public class AssignLicenseTests
 {

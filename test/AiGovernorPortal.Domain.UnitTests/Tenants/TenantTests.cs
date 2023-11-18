@@ -4,11 +4,10 @@ using AiGovernorPortal.Domain.Tenants;
 using AiGovernorPortal.Domain.Tenants.Events;
 using Bogus;
 using FluentAssertions;
-using Xunit;
 
 namespace AiGovernorPortal.Domain.UnitTests.Tenants;
 
-public class TenantTests : EntityBaseTest
+public class TenantTests : BaseTest
 {
     [Fact]
     public void AssignLicense_ShouldRaiseEvent_WhenSuccess()

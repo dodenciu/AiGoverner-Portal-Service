@@ -1,7 +1,7 @@
 ﻿using AiGovernorPortal.Domain.Abstractions;
 
 namespace AiGovernorPortal.Domain.UnitTests;
-public abstract class EntityBaseTest
+public abstract class BaseTest
 {
     public static T AssertDomainEventWasPublished<T>(IEntity entity)
         where T : IDomainEvent
